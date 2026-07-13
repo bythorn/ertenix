@@ -1,84 +1,59 @@
-+----------------------------------------------------------------------------+
-|                                                                              |
-|                              🏹  E R T E N I X                              |
-|                                                                              |
-|                  Český/slovenský PvP & SMP Minecraft server                 |
-|                                                                              |
-|                        Web: ertenix.net                                    |
-|                        Vyvíjeno týmem Bythorn (bythorn.dev)                 |
-|                                                                              |
-+----------------------------------------------------------------------------+
+# Ertenix
 
-## 📖 O projektu
+Český/slovenský PvP & SMP Minecraft server.
 
-Ertenix je český/slovenský PvP a SMP Minecraft server běžící na vlastní
-infrastruktuře (Hexado VPS). Tento repozitář obsahuje veškerou konfiguraci,
-nástroje a assety potřebné k provozu a údržbě serveru — resource pack,
-konfigurace pluginů, pomocné skripty a další.
+- **Web:** ertenix.net
+- **Vyvíjeno týmem:** [Bythorn](https://bythorn.dev)
 
-Server běží na architektuře Velocity proxy + Paper backendy, spravované
-přes Pterodactyl panel.
+## O projektu
 
-## 📂 Struktura repozitáře
+Ertenix je český/slovenský PvP a SMP Minecraft server běžící na vlastní infrastruktuře (Hexado VPS). Tento repozitář obsahuje veškerou konfiguraci, nástroje a assety potřebné k provozu a údržbě serveru — resource pack, konfigurace pluginů, pomocné skripty a další.
 
-+------------------------------------------------------------------+
-| ertenix/                                                          |
-|  |-- resourcepacks/   Resource packy (pack.zip, SHA1 hashe)       |
-|  |-- plugins/         Konfigurace a seznam použitých pluginů      |
-|  |-- scripts/         Pomocné skripty (nasazení, zálohy, ...)     |
-|  |-- configs/         Konfigurace serveru, proxy, databází        |
-|  `-- README.md                                                   |
-+------------------------------------------------------------------+
+Server běží na architektuře Velocity proxy + Paper backendy, spravované přes Pterodactyl panel.
 
-## 📦 Resource packy
+## Struktura repozitáře
 
-Oficiální resource pack serveru je hostovaný přímo na ertenix.net a je
-vynucen přes plugin ForcePack. SHA1 hash je udržovaný spolu s packem,
-aby se předešlo problémům s cachováním na straně klienta.
+```
+ertenix/
+├── resourcepacks/   # Resource packy (pack.zip, SHA1 hashe)
+├── plugins/         # Konfigurace a seznam použitých pluginů
+├── scripts/         # Pomocné skripty (nasazení, zálohy, automatizace)
+├── configs/         # Konfigurace serveru, proxy, databází apod.
+└── README.md
+```
 
-## 🔌 Použité pluginy
+## Resource packy
 
-+--------------------+------------------------------------------------------+
-| Plugin             | Účel                                                  |
-+--------------------+------------------------------------------------------+
-| LuckPerms          | Správa práv a skupin (sdílená MySQL napříč proxy/BE)  |
-| ForcePack          | Vynucení resource packu                               |
-| PlaytimePlus       | Odměny za odehraný čas na serveru                     |
-| DiscordSRV         | Propojení herního chatu s Discordem                   |
-| ExcellentCrates    | Herní bedny a loot systém                              |
-| DecentHolograms    | Interaktivní hologramy (menu, info tabule)            |
-| Animated Scoreboard| Dynamický scoreboard s PlaceholderAPI                 |
-+--------------------+------------------------------------------------------+
+Oficiální resource pack serveru je hostovaný přímo na ertenix.net a je vynucen přes plugin **ForcePack**. SHA1 hash je udržovaný spolu s packem, aby se předešlo problémům s cachováním na straně klienta.
 
-Kompletní a aktuální seznam včetně verzí a konfigurací najdeš ve složce
-plugins/.
+## Použité pluginy
 
-## 🛠️ Skripty
+| Plugin | Účel |
+|---|---|
+| LuckPerms | Správa práv a skupin (sdílená MySQL napříč proxy/backendy) |
+| ForcePack | Vynucení resource packu |
+| PlaytimePlus | Odměny za odehraný čas na serveru |
+| DiscordSRV | Propojení herního chatu s Discordem |
+| ExcellentCrates | Herní bedny a loot systém |
+| DecentHolograms | Interaktivní hologramy (menu, info tabule) |
+| Animated Scoreboard | Dynamický scoreboard s PlaceholderAPI |
 
-Ve složce scripts/ najdeš pomocné nástroje pro:
-  - nasazení a aktualizace serveru
-  - zálohování světů a databází
-  - automatizaci běžných administrátorských úkonů
+## Skripty
 
-## ⚙️ Konfigurace
+Ve složce `scripts/` najdeš pomocné nástroje pro nasazení, zálohy a automatizaci.
 
-Ve složce configs/ jsou uložené konfigurační soubory pro Velocity proxy,
-Paper backendy a další součásti infrastruktury.
+## Konfigurace
 
-## 👥 Tým
+Ve složce `configs/` jsou uložené konfigurační soubory pro Velocity proxy, Paper backendy a další součásti infrastruktury.
 
-+---------------+-----------------------------------+
-| Přezdívka     | Role                               |
-+---------------+-----------------------------------+
-| chlebasmc     | Frontend, infrastruktura           |
-| opecko14      | Backend, databáze                  |
-| maxern_ytb    | Administrace, komunita             |
-+---------------+-----------------------------------+
+## Tým
 
-## 📜 Licence
+| Přezdívka | Role |
+|---|---|
+| chlebasmc | Frontend, infrastruktura |
+| opecko14 | Backend, databáze |
+| maxern_ytb | Administrace, komunita |
 
-Viz LICENSE.md.
+## Licence
 
-+----------------------------------------------------------------------------+
-|                    Vytvořeno s ❤️  týmem Bythorn (bythorn.dev)              |
-+----------------------------------------------------------------------------+
+Viz [LICENSE.md](./LICENSE.md).
